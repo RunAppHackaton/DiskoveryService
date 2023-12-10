@@ -1,8 +1,8 @@
 FROM eclipse-temurin:17-jdk-alpine as build
 WORKDIR /workspace/app
 
-COPY mvnw .
-COPY .mvn .mvn
+COPY ./.github/workflows/docker-resourse/mvnw .
+COPY ./.github/workflows/docker-resourse/.mvn .mvn
 COPY pom.xml .
 COPY src src
 
